@@ -2,8 +2,29 @@ import java.util.Scanner;
 
 public class Lab3{
     public static void main(String []args){
+        if1();
         lab4();
         lab3();
+    }
+
+    public static void if1(){
+/*Be användaren att mata in ett tal.
+Kontrollera om talet är större än 10. Meddela
+användaren om talet är större än 10- Talet är större än 10. Om det är mindre än 10
+meddela användaren
+– Talet är mindre än 10*/
+        Scanner scanner = new Scanner(System.in);
+        //Matar in
+
+        System.out.print("Skriv in ett tal:");
+        int tal = scanner.nextInt();
+        if(tal > 10){
+            System.out.println("Det är större än 10");
+        }
+        if(tal < 10){
+            System.out.println("Det är mindre än 10");
+        }
+
     }
 
     public static void lab4(){
